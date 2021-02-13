@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website1</title>
+    <style>
+        body {
+
+            margin: 0px;
+            padding: 0px;
+            background: url('Background.jpg');
+        }
+
+        .header {
+            background-color: #003cff;
+            position: sticky;
+        } 
+
+        .mid {
+            /* border: 2px solid red; */
+            display: block;
+            margin: 12px auto;
+            width: 33%;
+        }
+
+        .right {
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            top: 7px;
+            right: 49px;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            font-size: 20px;
+            display: inline-block;
+        }
+
+        .navbar li a {
+            color: grey;
+            text-decoration: none;
+            padding: 34px 23px;
+        }
+
+        .navbar li a:hover, .navbar li a.active{
+            color: white;
+            text-decoration: none;
+            padding: 34px 23px;
+        }
+
+        .btn {
+            background-color: #003cff;
+            text-decoration: wavy;
+            border-radius: 10px;
+            border: 2px solid white;
+            color: white;
+            padding: 5px 10px;
+            margin: 5px;
+            cursor: pointer;
+            font-family: cursive;
+        }
+
+        .btn:hover {
+            background-color: rgb(255, 255, 255);
+            border: 2px solid#003cff;
+            color: #003cff;
+            cursor: pointer;
+            font-weight: 700;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .container {
+            color: #003cff;
+            text-align: left;
+            font-size: xx-large;
+            margin-top: 150px;
+            font-family: cursive;
+            border-radius: 10px;
+            font-weight: 1000;
+            padding: 0 20px;
+        }
+
+
+        .button {
+            display: inline-block;
+            border-radius: 30px;
+            background-color: #003cff;
+            border: none;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 28px;
+            padding: 20px;
+            width: 200px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        .button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+        .button:hover span {
+            padding-right: 25px;
+        }
+
+        .button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!--Right class for buttons-->
+        <div class="right">
+            <a href="form.html"><button class="btn">Donate to nature</button></a>
+        </div>
+
+        <!-- Mid class for nav bar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="index.html" >Nature</a></li>
+                <li><a href="plants.html" class="active">Plants</a></li>
+                <li><a href="trees.html">Trees</a></li>
+                <li><a href="earth.html">Earth</a></li>
+            </ul>
+        </div>
+
+    </header>
+
+    <div class="container">
+        <p>Plants are living organisms that can live on land or water. They have many different forms such as huge trees, others are herbs or some have bushy form. The basic food for all organisms is produced by green plants. Plants help in maintaining oxygen balance, the most important gas that enable us to breathe. Animals emit carbon dioxide by taking in oxygen. This rise in carbon dioxide levels in air is reduced by plants. Removal of carbon dioxide from the atmosphere reduces the greenhouse effect and global warming. It also maintains the ozone layer that helps protect Earth’s life from damaging UV radiation. Humans directly or indirectly depend on plants for several of their needs.</p>
+    </div>
+
+    <div class="center">
+        <a href="trees.html"><button class="button" style="vertical-align:middle"><span>Next </span></button></a>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website1</title>
+    <style>
+        body {
+
+            margin: 0px;
+            padding: 0px;
+            background: url('Background.jpg');
+        }
+
+        .header {
+            background-color: #003cff;
+            position: sticky;
+        } 
+
+        .mid {
+            /* border: 2px solid red; */
+            display: block;
+            margin: 12px auto;
+            width: 33%;
+        }
+
+        .right {
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            top: 7px;
+            right: 49px;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            font-size: 20px;
+            display: inline-block;
+        }
+
+        .navbar li a {
+            color: grey;
+            text-decoration: none;
+            padding: 34px 23px;
+        }
+
+        .navbar li a:hover, .navbar li a.active{
+            color: white;
+            text-decoration: none;
+            padding: 34px 23px;
+        }
+
+        .btn {
+            background-color: #003cff;
+            text-decoration: wavy;
+            border-radius: 10px;
+            border: 2px solid white;
+            color: white;
+            padding: 5px 10px;
+            margin: 5px;
+            cursor: pointer;
+            font-family: cursive;
+        }
+
+        .btn:hover {
+            background-color: rgb(255, 255, 255);
+            border: 2px solid#003cff;
+            color: #003cff;
+            cursor: pointer;
+            font-weight: 700;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .container {
+            color: #003cff;
+            text-align: left;
+            font-size: xx-large;
+            margin-top: 100px;
+            font-family: cursive;
+            border-radius: 10px;
+            font-weight: 1000;
+            padding: 0 20px;
+        }
+
+
+        .button {
+            display: inline-block;
+            border-radius: 30px;
+            background-color: #003cff;
+            border: none;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 28px;
+            padding: 20px;
+            width: 200px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        .button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+        .button:hover span {
+            padding-right: 25px;
+        }
+
+        .button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!--Right class for buttons-->
+        <div class="right">
+            <a href="form.html"><button class="btn">Donate to nature</button></a>
+        </div>
+
+        <!-- Mid class for nav bar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="index.html">Nature</a></li>
+                <li><a href="plants.html">Plants</a></li>
+                <li><a href="trees.html"  class="active">Trees</a></li>
+                <li><a href="earth.html">Earth</a></li>
+            </ul>
+        </div>
+
+    </header>
+
+    <div class="container">
+        <p>Trees are very important, valuable and necessary to our existence as they have furnished us with two important life essentials; food and oxygen. Apart from basically keeping us alive, there are many other little and big benefits we get from trees. So, trees are vital resources for the survival of all living beings. Therefore, Governments world over and many Organizations are taking steps to prevent deforestation and to tell the benefits of planting trees. Let us go through some important points about the Importance of trees for the existence of human life. Trees intakes Carbon dioxide from air and breathe out fresh oxygen for our life support. This cycle is made by nature to sustain other living beings. Further, the Carbon dioxide breathed in by the trees is one of the greenhouse gases. This and other greenhouse gases, when released into the atmosphere form a layer and trap the heat from the sun. They result in an increase in the atmospheric temperature. This causes global warming. So planting more trees will clean the air will reduce the global warming effect.</p>
+    </div>
+
+    <div class="center">
+        <a href="earth.html"><button class="button" style="vertical-align:middle"><span>Next </span></button></a>
+    </div>
+
+
+</body>
+
+</html>
